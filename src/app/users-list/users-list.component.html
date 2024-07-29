@@ -1,0 +1,9 @@
+<h4>List of Users</h4>
+
+<ul>
+<li *ngFor="let user of (usersList|async)">
+  <a href="#" [routerLink]="['detail',user.id]">{{user.name}}</a>
+</li>
+</ul>
+
+<router-outlet></router-outlet>

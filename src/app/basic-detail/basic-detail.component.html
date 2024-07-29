@@ -1,0 +1,24 @@
+<table class="table table-bordered">
+    <thead>
+    <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>USERNAME</th>
+    <th>EMAIL</th>
+    <th>WEBSITE</th>
+    <th>PHONE</th>
+    <th>ADDRESS</th>
+</tr>
+    </thead>
+    <tbody>
+   <tr *ngFor="let detail of basicUserDetails">
+    <td>{{detail.id}}</td>
+    <td>{{detail.name}}</td>
+    <td>{{detail.username}}</td>
+    <td>{{detail.email}}</td>
+    <td>{{detail.website}}</td>
+    <td>{{detail.phone}}</td>
+    <td>{{detail.address.street}}, {{detail.address.suite}}, {{detail.address.city}}, {{detail.address.zipcode}}</td>
+   </tr>
+    </tbody>
+</table>

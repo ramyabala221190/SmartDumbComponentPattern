@@ -1,0 +1,19 @@
+<table class="table table-bordered">
+    <thead>
+    <tr>
+    <th>Comment By</th>
+    <th>Email</th>
+    <th>Comment</th>
+</tr>
+    </thead>
+    <tbody>
+   <tr *ngFor="let detail of commentsList">
+    <td>{{detail.name}}</td>
+    <td>{{detail.email}}</td>
+    <td>{{detail.body}}
+    </td>
+   </tr>
+    </tbody>
+</table>
+
+

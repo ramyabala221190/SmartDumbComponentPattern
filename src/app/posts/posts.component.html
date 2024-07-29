@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+    <thead>
+    <tr>
+    <th>POST TITLE</th>
+    <th>POST</th>
+    <th>Comments</th>
+</tr>
+    </thead>
+    <tbody>
+   <tr *ngFor="let detail of postsList">
+    <td>{{detail.title}}</td>
+    <td>{{detail.body}}</td>
+    <td><button class="btn btn-secondary" (click)="viewComments(detail.id)">View Comments</button>
+    <comments *ngIf="detail.id" [commentsList]="commentsList"></comments>
+    </td>
+   </tr>
+    </tbody>
+</table>
+
+

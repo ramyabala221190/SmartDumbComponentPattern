@@ -1,0 +1,15 @@
+<table class="table table-bordered">
+    <thead>
+    <tr>
+    <th>TITLE</th>
+    <th>COMPLETED</th>
+</tr>
+    </thead>
+    <tbody>
+   <tr *ngFor="let todo of todoList;let todoIndex=index">
+    <td>{{todo.title}}</td>
+    <td>{{todo.completed}}</td>
+    <td><button class="btn btn-danger" (click)="delete(todoIndex,todo.id)">Delete</button></td>
+   </tr>
+    </tbody>
+</table>
