@@ -7,7 +7,7 @@ export enum Events{
 }
 
 export interface EventModel{
-  name:any,
+  name:Events,
   value?:any
 }
 
